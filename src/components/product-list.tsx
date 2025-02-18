@@ -1,6 +1,7 @@
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { FC, useState } from "react";
 
+
 type Product = {
     id: number;
     title: string;
@@ -53,11 +54,12 @@ const ProductList: FC = () => {
                             alt={product.title}
                             className="w-full h-40 object-cover"
                         />
-                        <h2 className="text-base font-semibold mt-2">{product.title}</h2>
+                        <h2 className="text-base font-bold mt-2">{product.title}</h2>
+                        <p className="font-light">Category: {product.category.name}</p>
                         <div className="flex items-center justify-between mt-2">
                             <p className="text-lg font-semibold mt-2">${product.price}</p>
                             <button className="bg-emerald-500 text-sm text-emerald-50 px-4 py-2 rounded cursor-pointer hover:bg-emerald-600">
-                                Add to cart
+                             Add to cart
                             </button>
                         </div>
                     </div>
