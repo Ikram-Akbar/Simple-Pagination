@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div className="h-screen w-full py-20 flex justify-center">
+      <div className="h-screen w-full py-20 flex justify-center ">
         <Categories/>
         <div className="w-full max-w-5xl px-6">
           <QueryClientProvider client={queryClient}>

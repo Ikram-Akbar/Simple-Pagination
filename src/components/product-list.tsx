@@ -46,7 +46,7 @@ const ProductList: FC = () => {
 
     return (
         <>
-            <div className="grid grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
                 {products?.map((product: Product) => (
                     <div key={product.id} className="bg-gray-100 p-5 rounded-lg">
                         <img
